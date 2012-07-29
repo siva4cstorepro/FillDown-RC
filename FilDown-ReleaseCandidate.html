@@ -1,0 +1,138 @@
+﻿<!DOCTYPE>
+<html lang="en">
+<head>
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet"
+        type="text/css" />
+    <title></title>
+</head>
+<body>
+    <div id="content">
+        <h2>
+            Sample Grid</h2>
+        <div class="EnetGridData span8">
+            <table class="EnetGridDataTable table table-condensed table-striped">
+                <thead>
+                    <tr>
+                        <th nowrap class="">
+                            #
+                        </th>
+                        <th nowrap class="">
+                           Category Name
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                        <th nowrap="nowrap">
+                        </th>
+                        <th nowrap="nowrap">
+                        </th>
+                        <th nowrap="nowrap">
+                        </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        Candy
+                    </td>
+                    <td>
+                        <input type="text" class="span3" form="frmGlobalListGridForm" name="txtDesc_4" id="txtDesc_4"
+                            value="Snicker">
+                    </td>
+                    <td>
+                        <select class="span3" form="frmGlobalListGridForm" name="txtDeptID_4" id="txtDeptID_4">
+                            <option value="-1"></option>
+                            <option value="700">Dept</option>
+                            <option value="9999">Fee</option>
+                            <option value="1024">Fuel</option>
+                            <option value="131">Money Order Fees</option>
+                            <option value="3200">Test</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="span1" form="frmGlobalListGridForm" name="txtPrice_4" id="txtPrice_4"
+                            value="">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="txtItemToUpdate" class="EWF-JQE-UpdateAmt" form="frmGlobalListGridForm"
+                            id="txtItemToUpdate_4" value="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        Candy
+                    </td>
+                    <td>
+                        <input type="text" class="span3" form="frmGlobalListGridForm" name="txtDesc_3" id="txtDesc_3"
+                            value="Snicker 2">
+                    </td>
+                    <td>
+                        <select class="span3" form="frmGlobalListGridForm" name="txtDeptID_3" id="txtDeptID_3">
+                            <option value="-1"></option>
+                            <option value="700">Dept</option>
+                            <option value="9999">Fee</option>
+                            <option value="1024">Fuel</option>
+                            <option value="131">Money Order Fees</option>
+                            <option value="3200">Test</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="span1" form="frmGlobalListGridForm" name="txtPrice_3" id="txtPrice_3"
+                            value="">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="txtItemToUpdate" class="EWF-JQE-UpdateAmt" form="frmGlobalListGridForm"
+                            id="txtItemToUpdate_3" value="3">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        Candy
+                    </td>
+                    <td>
+                        <input type="text" class="span3" form="frmGlobalListGridForm" name="txtDesc_2" id="txtDesc_2"
+                            value="Snicker 3">
+                    </td>
+                    <td>
+                        <select class="span3" form="frmGlobalListGridForm" name="txtDeptID_2" id="txtDeptID_2">
+                            <option value="-1"></option>
+                            <option value="700">Dept</option>
+                            <option value="9999">Fee</option>
+                            <option value="1024">Fuel</option>
+                            <option value="131">Money Order Fees</option>
+                            <option value="3200">Test</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" class="span1" form="frmGlobalListGridForm" name="txtPrice_2" id="txtPrice_2"
+                            value="">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="txtItemToUpdate" class="EWF-JQE-UpdateAmt" form="frmGlobalListGridForm"
+                            id="txtItemToUpdate_2" value="2">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="enet-filldown.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.EnetGridDataTable').fillDown({
+                    override: true
+                        , columns: '[{"columnIndex": "3"},{"columnIndex": "4"},{"columnIndex": "5"}]' 
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
